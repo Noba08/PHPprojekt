@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saját recept</title>
+    <link href="http://fonts.cdnfonts.com/css/gentium-book-basic" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+	<script src="keszites.js" async></script>
+    <link rel="stylesheet" href="./css/keszites.css">
+
+</head>
+<body>
+<form action="?php echo htmlspecialchars($_SERVER[PHP_SELF]);?>" method="post" enctype="multipart/form-data">
+    <header>
+        <div id="logo">
+            <a href="index.php">
+                <img src="./kepek/logo1.png">
+            </a>
+        </div>
+        <div id="menu">
+            <div class="dropdown">
+                <img src="menu.png" onclick="dropDown1()" class="dropbtn">
+                <p src="menu.png" onclick="dropDown1()" class="dropbtn desktop">Profil</p>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="sajat.php">Saját Receptek</a>
+                    <a href="#">Kedvenc Receptek</a>
+                    <a href="profil.php">Profil Megtekintése</a>
+					<a href="logout.php">Kijelentkezés</a>
+
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <span class="hatter"></span>
+
+<form method="post">
+<div class="diy">
+
+	<h2>Készítsünk saját receptet!</h2>
+	<div class="name">
+		<h3>Étel neve: </h3>
+        <form method="post">
+		    <input type="text" name="rname" id="rname">
+        </form>
+	</div>
+	<div class="kep">
+	
+		<img src="images/nopicture.png" id="kep">
+		<input type="file" id="logo2" name="img" onchange="putImage()">
+	</div>
+		
+	<div class="lista">
+		<h3>Hozzávalók:</h3>
+			<div id="myDIV" class="header">
+				<textarea id="hozzavalo"  name="ing" rows="20" cols="90" placeholder="Ide írja a hozzávalókat vesszővel elválasztva!"></textarea>
+				<br>
+			</div>
+	</div>
+	
+	<div class="elkeszit">
+		<h3>Elkészítés:</h3>
+		    <textarea id="leiras"  name="leiras" rows="40" cols="90"></textarea>
+	</div>
+	
+	<div class="ido">
+		<label for="quantity">Elkészítési idő:</label><br>
+		<input type="number" name="time" min="1"> perc<br>
+		<br>
+		<label for="level">Elkészítés nehézsége:</label><br>
+        <select name="level">
+			<option></option>
+			<option>Könnyű</option>
+			<option>Átlagos</option>
+			<option>Nehéz</option>
+		</select><br>
+		<br>
+		<label for="ertekeles">Ertekeles:</label><br>
+		<select name="ertekeles">
+			<option></option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+
+		</select><br>
+		<br>
+		<label for="reg">Étel nemzetiség:</label><br>
+        <select name="reg">
+			<option></option>
+			<option>Magyaros</option>
+			<option>Amerikai</option>
+			<option>Indiai</option>
+			<option>Olaszos</option>
+			<option>Kínai</option>
+			<option>Francia</option>
+			<option>Japán</option>
+			<option>Brit</option>
+			<option>Német</option>
+			<option>Egyéb</option>
+
+		</select>
+	</div>
+	
+	<div class="filter">
+		<h3>Szűrők:</h3>
+			<div class="chk">
+				<input type="checkbox" name="vg" value="1">Vegetariánus<br>
+				<input type="checkbox" name="vn" value="2">Vegán<br>
+				<input type="checkbox" name="gm" value="3">Gluténmentes<br>
+				<input type="checkbox" name="lm" value="4">Laktózmentes<br>
+				<input type="checkbox" name="tm" value="5">Tojásmentes<br>
+				<input type="checkbox" name="sm" value="6">Szójamentes<br>
+				<input type="checkbox" name="cm" value="7">Cukormentes<br>
+				<input type="checkbox" name="km" value="8">Kukoricamentes<br>
+			</div>
+	</div>
+	    <input type="submit" name="save" class="gomb" value="RECEPT MENTÉSE">
+</div>
+</form>
+</body>
+</html>

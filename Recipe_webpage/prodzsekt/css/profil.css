@@ -1,0 +1,51 @@
+* {
+    font-family: 'Gentium Book Basic', sans-serif;
+}
+
+body {
+    min-width: 300px;
+}
+
+#container {
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.elvalaszto {
+    width: 90%;
+    margin: auto;
+}
+
+#alapadatok {
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    border: 1px rgba(105, 0, 0, 0.3) solid;
+    border-radius: 20px;
+}
+
+.alapok {
+    margin-top: 20px;
+    color: rgb(105, 0, 0);
+}
+
+#szerkesztes {
+    display: block;
+    text-decoration: none;
+    color: rgb(105, 0, 0);
+    font-size: 2em;
+    text-align: center;
+}
+
+#szerkesztes:hover {
+    color:rgba(105, 0, 0, 0.3);
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1024px) {
+    #container{
+        height: 80%;
+        width: 60%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,66 @@
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinamikus Receptek - Profil szerkesztése</title>
+    <link href="http://fonts.cdnfonts.com/css/gentium-book-basic" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="logo1.png">
+            </a>
+        </div>
+        <div id="menu">
+            <div class="dropdown">
+                <img src="menu.png" onclick="dropDown1()" class="dropbtn">
+                <p src="menu.png" onclick="dropDown1()" class="dropbtn desktop">Profil</p>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Saját Receptek</a>
+                    <a href="#">Kedvenc Receptek</a>
+                    <a href="#">Profil Megtekintése</a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <span class="hatter"></span>
+    <hr id="header-valaszto">
+    <div id="container">
+        <h1 style="text-align: center; color: rgb(105, 0, 0);">PROFIL SZERKESZTÉS</h1>
+        <br>
+        <div id="alapadatok">
+            <form>
+                <label for="fnev"   class="adat">FELHASZNÁLÓNÉV: </label><input type="text" name="fnev" style="font-size: 1.1em"><br>
+                <label for="tnev"   class="adat">TELJES NÉV: </label><input type="text" name="tnev" style="font-size: 1.1em"><br>
+                <label for="email"  class="adat">EMAIL CÍM: </label><input type="text" name="email" style="font-size: 1.1em"><br><br>
+                <label for="jelszo" class="adat">JELSZÓ: </label><input type="password" name="jelszo" style="font-size: 1.1em"><br>
+            </form>
+            <button>MENTÉS</button>
+        </div><br>
+        <hr class="elvalaszto"><br>
+    </div>
+    <script>
+        function dropDown1() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

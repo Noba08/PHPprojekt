@@ -1,0 +1,116 @@
+* {
+    font-family: 'Gentium Book Basic', sans-serif;
+}
+
+#szurok {
+    height: 80px;
+    border-bottom: 1px rgba(105, 0, 0, 0.545) solid;
+    
+}
+
+#szurok-sav {
+    padding-top: 28px;
+    width: 100%;
+    display: flex;
+	justify-content: space-between;
+    margin: auto;
+}
+
+.rendezes-nyil {
+    width: 20px;
+    margin: 5px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+
+#szuro {
+    margin-left: 20%;
+}
+
+#rendezes {
+    margin-right: 20%;
+}
+
+button {
+    border: 1px rgba(105, 0, 0, 0.545) solid;
+    border-radius: 5px;
+    background-color:rgba(239, 155, 155, 0.524);
+    font-size: 1.2em;
+}
+
+button img {
+    position: relative;
+    top: 2px;
+    width: 16px;
+    padding-right: 9px;
+}
+
+.szuro-gomb {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    padding: 4px 10px;
+}
+
+form {
+    margin: 10px;
+    border-bottom: 1px rgba(105, 0, 0, 0.545) solid;
+}
+
+form label{
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+
+.szures-gomb {
+    font-size: 1.3em;
+    width: 100%;
+    border: 1px rgba(105, 0, 0, 0.545) solid;
+    border-radius: 5px;
+    background-color:rgba(239, 155, 155, 0.524);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.nehezseg {
+    font-size: 1.2em;
+    margin: 6px;
+    display: inline-block;
+}
+
+.szuro2 {
+    margin-top: 10px;
+    background-color: rgba(239, 155, 155, 0.524);
+    border: 1px rgba(105, 0, 0, 0.545) solid;
+    border-radius: 5px;
+}
+
+select, option {
+    font-size: 1.1em;
+}
+
+.ido {
+    width: 130px;
+    height: 20px;
+}
+
+  @media only screen and (min-width: 1024px) {
+    #container {
+        width: 80%;
+        margin: auto;
+        background-color: whitesmoke;
+    }
+
+    #ossz-szurok {
+        padding: 10px;
+        float: left;
+        width: 30%;
+        border: 1px rgba(75, 75, 75, 0.614) solid;
+        padding-right: 5px;
+        background-color: whitesmoke;
+    }
+  }

@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;    
+    margin: 0;
+    padding: 0;
+  }
+  
+header {
+  height: 120px;
+  background-color: white;
+}
+
+.link {
+  position: relative;
+  bottom: 80px;
+  left: 30px;
+  margin-left: 80%;
+  color: black;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.link:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.profil {
+  top: -70px;
+}
+
+#logo {
+  
+  margin: 10px 10px;
+  height: 100px;
+}
+
+  /* Add padding to containers */
+  .container {
+    width: 90%;
+    margin: auto;
+    padding: 16px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hatter {
+    position: absolute;
+	width: 100%;
+	height: 45%;
+    z-index: -1;
+
+    min-height: 1000px;
+
+	background: url('background.jpg');
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	opacity: 0.8;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password],input[type=email],input[type=name],input[type=date] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: #f1f1f1;
+  }
+
+  .form-control {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid black;
+    margin-bottom: 25px;
+  }
+  
+  .registerbtn {
+    background-color: #aa0404;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  .signin {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: whitesmoke;
+    text-align: center;
+  }
+
+
+  .btn-edit { 
+    text-decoration: none;
+    background-color: #319823;
+    border:1px solid #319823;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 200px;
+    text-align: center;
+  }
+
+  .btn-edit a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+
+  .btn-edit:hover a{
+    text-decoration: none;
+    color: #319823;
+  }
+  .btn-edit:hover { 
+    text-decoration: none;
+    background-color: #ffffff;
+    border:1px solid #319823;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  #register {
+    text-decoration: none; 
+    color: rgb(92, 0, 0);
+  }
+
+  #register:hover {
+    text-decoration: underline;
+    color: rgba(92, 0, 0, 0.5);
+  }
+
+
+  .btn-delete {
+    font-weight: 600;
+    color: #fff;
+    background-color: #aa0404;
+    font-size: 19px;
+    padding: 10px;
+    border: 1px solid #aa0404;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 200px;
+  }
+  .btn-delete a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .btn-delete:hover a {
+    text-decoration: none;
+    color: #aa0404;
+  }
+
+  .btn-delete:hover {
+    font-weight: 600;
+    color: #aa0404;
+    background-color: #ffffff;
+    font-size: 19px;
+    padding: 10px;
+    border: 1px solid #aa0404;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+  .btn-info {
+    font-weight: 600;
+    color: #fff;
+    background-color: #000000;
+    font-size: 19px;
+    padding: 10px;
+    border-color: 1px solid #000000;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 200px;
+
+  }
+  .btn-info:hover {
+    font-weight: 600;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 19px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+
+
+.card-header { 
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+  
+.card {
+  width: 70%;
+  text-align: center;
+}
+
+.table { 
+  width: 100%;
+}
+
+.table tr {
+  margin-bottom: 25px;
+}

@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 300px;
+}
+
+#header-valaszto {
+    width: 100%;
+}
+
+header {
+    height: 60px;
+}
+
+#logo {
+    padding: 5px;
+    display: inline-block;
+}
+
+#logo a img {
+    height: 42px;
+}
+
+#menu {
+    float: right;
+}
+
+.dropdown img {
+    box-sizing:unset;
+    height: 25px;
+    padding: 17px 25px;
+}
+
+#container {
+    padding-top: 20px;
+}
+
+.dropbtn:focus{
+    background-color: whitesmoke;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    border: 1px rgba(105, 0, 0) solid;
+    padding: 5px;
+    background-color: whitesmoke;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 10px;
+  }
+
+  .dropdown-content input {
+    font-size: 20px;
+    color: rgba(105, 0, 0);
+    text-decoration: none;
+    display: inline;
+    background-color: whitesmoke;
+    border: 0;
+  }
+
+  .dropdown-content a {
+    margin: 8px;
+    text-decoration: none;
+    color: rgba(105, 0, 0);
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+  .show {display:block;}
+
+  .desktop {
+    display: none;
+  }
+
+
+  @media only screen and (min-width: 600px) {
+    header {
+        height: 90px;
+    }
+    #logo {
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    #logo a img {
+        height: 70px;
+    }
+    
+    #menu {
+        float: right;
+    }
+    
+    #menu img {
+        height: 45px;
+        padding: 20px 25px;
+    }
+    .dropbtn:focus{
+        background-color: whitesmoke;
+    }
+    
+    .dropdown {
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: none;
+        background-color: #f1f1f1;
+        min-width: 250px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 0;
+        right: 10px;
+      }
+    
+      .dropdown-content input {
+        font-size: 20px;
+        color: rgba(105, 0, 0);
+        text-decoration: none;
+      }
+    
+      .dropdown-content a:hover {background-color: #ddd;}
+      .dropdown-content input:hover {background-color: #ddd;}
+      .show {display:block;}
+  }
+
+  @media only screen and (min-width: 1024px) {
+
+    #header-valaszto {
+        display: none;
+    }
+
+    .desktop {
+        display:inline-block;
+        margin: 40px 25px;
+        font-size: 20px;
+        color: rgba(105, 0, 0);
+        cursor: pointer;
+    }
+
+    .desktop:hover {
+        text-decoration: underline;
+        color: rgba(105, 0, 0, 0.5);
+    }
+
+    header {
+        margin: auto;
+        height: 100px;
+        width: 50%;
+    }
+    #logo {
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    #logo a img {
+        height: 70px;
+    }
+    
+    #menu {
+        float: right;
+    }
+    
+    #menu img {
+        height: 45px;
+        padding: 20px 25px;
+        display: none;
+    }
+
+
+
+      .hatter {
+        position: absolute;
+          width: 100%;
+        z-index: -1;
+    
+        min-height: 1000px;
+    
+        background: url('../kepek/background.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+      }
+  }
+
+
+  

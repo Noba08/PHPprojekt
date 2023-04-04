@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 300px;
+}
+@media only screen and (min-width: 480px){
+
+  
+ 
+	.diy {
+		background-color: whitesmoke;
+		width: 70%;
+		height:1000px;
+		margin: auto;
+		padding: 16px;
+		}
+	  
+	h2 {
+		text-align:center;
+	}
+	.name {
+			position:absolute;
+			left:150px;
+			top:110px;
+		}
+	#kep {
+		position: absolute;
+		border:2px solid black;
+		width:25%;
+		height:20%;
+		box-sizing: border-box;
+		top:160px;
+		left:150px;
+	}
+	#logo2{
+		position:absolute;
+		left:150px;
+		top:340px;
+	}
+	.lista {
+		position: absolute;
+		top: 900px;
+		left: 60px;
+		bottom: 0;
+		width: 100%;
+	}
+
+	ul li {
+	  cursor: pointer;
+	  position: relative;
+	  padding: 12px 0px 0px 40px;
+	  background: #eee;
+	  transition: 0.2s;
+	  left:20px;
+
+
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+	}
+	.close {
+	  position: absolute;
+	  left:150px;
+	  top: 0;
+	  padding: 8px 12px 8px 12px;
+	}
+	.close:hover {
+	  background-color: #f44336;
+	  color: white;
+	}
+	.header:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	  
+	}
+	#myInput {
+	  margin: 0;
+	  border: 1px solid black;
+	  width: 20%;
+	  padding: 3px;
+	}
+	.addBtn {
+	  padding: 3px;
+	  width: 11%;
+	  background: grey;
+	  color: white;
+	  text-align: center;
+	  
+	  cursor: pointer;
+	  transition: 0.3s;
+	}
+
+	.addBtn:hover {
+	  background-color: #bbb;
+	}
+
+	.ido {
+		position: absolute;
+		top: 1300px;
+		left: 60px;
+		bottom: 0;
+		width: 60%;
+		padding-bottom:20px;
+	}
+	.chk {
+		border:1px solid black;
+		border-radius:10px;
+		padding:10px;
+	}
+	.elkeszit {
+		position: absolute;
+		top: 370px;
+		left: 60px;
+		bottom: 0;
+		width: 80%;
+		box-sizing: border-box;
+	}
+	#leiras {
+		border-radius: 10px;
+		border:2px solid black;
+		background-color:lightgrey;
+		width:90%;
+		height:90%;
+		padding:10px;
+		resize:none;
+		font-size:15px;
+	}
+	.filter {
+			background-color:transparent;
+			position: absolute;
+			top:900px;
+			left:270px;
+		}
+	.gomb {
+		background: grey;
+		color:white;
+		position:absolute;
+		top: 1425px;
+		left: 170px;
+		height:5%;
+		width:30%;
+		border-radius:10px;
+		transition: 0.3s;
+	}
+	.gomb:hover {
+		cursor: pointer;
+		background-color: #bbb;
+	}
+}
+
+  @media only screen and (min-width: 768px) {
+    
+  
+  
+		.diy {
+			background-color: whitesmoke;
+			width: 70%;
+			height:1000px;
+			margin: auto;
+			padding: 16px;
+			}
+		  
+		h2 {
+			text-align:center;
+		}
+		.name {
+			position:absolute;
+			left:50px;
+			top:180px;
+		}
+		#kep {
+			position: absolute;
+			border:2px solid black;
+			width:25%;
+			height:20%;
+			box-sizing: border-box;
+			top:230px;
+			left:50px;
+		}
+		#logo2{
+			position:absolute;
+			left:50px;
+			top:410px;
+		}
+		.lista {
+			position: absolute;
+			top: 440px;
+			left: 50px;
+			bottom: 0;
+			width: 70%;
+		}
+
+		ul li {
+		  cursor: pointer;
+		  position: relative;
+		  padding: 12px 0px 0px 40px;
+		  background: whitesmoke;
+		  transition: 0.2s;
+		  left:20px;
+
+
+		  -webkit-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		}
+		.close {
+		  position: absolute;
+		  left:150px;
+		  top: 0;
+		  padding: 8px 12px 8px 12px;
+		}
+		.close:hover {
+		  background-color: #f44336;
+		  color: white;
+		}
+		.header:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		  
+		}
+		#myInput {
+		  margin: 0;
+		  border: 1px solid black;
+		  width: 20%;
+		  padding: 3px;
+		}
+		.addBtn {
+		  padding: 3px;
+		  width: 11%;
+		  background: grey;
+		  color: white;
+		  text-align: center;
+		  
+		  cursor: pointer;
+		  transition: 0.3s;
+		}
+
+		.addBtn:hover {
+		  background-color: #bbb;
+		}
+
+		.ido {
+			position: absolute;
+			top: 1400px;
+			left: 330px;
+			bottom: 0;
+			width: 60%;
+			padding-bottom:20px;
+		}
+		.elkeszit {
+			position: absolute;
+			top: 180px;
+			left: 330px;
+			bottom: 0;
+			width: 53%;
+			box-sizing: border-box;
+		}
+		#leiras {
+			border-radius: 10px;
+			border:2px solid black;
+			background-color:lightgrey;
+			width:90%;
+			height:90%;
+			padding:10px;
+			resize:none;
+			font-size:15px;
+		}
+		.filter {
+			background-color:transparent;
+			position: absolute;
+			top:900px;
+			left:330px;
+		}
+		.gomb {
+			background: grey;
+			color:white;
+			position:absolute;
+			top: 1450px;
+			left: 50px;
+			height:5%;
+			width:30%;
+			border-radius:10px;
+			transition: 0.3s;
+		}
+		.gomb:hover {
+			cursor: pointer;
+			background-color: #bbb;
+		}
+}
+
+  @media only screen and (min-width: 1024px) {
+    
+      .hatter {
+        position: absolute;
+          width: 100%;
+          height: 45%;
+        z-index: -1;
+    
+        min-height: 1000px;
+    
+        background: url('background.jpg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.8;
+      }
+	  
+	  
+	  .diy {
+			background-color: whitesmoke;
+			width: 70%;
+			height:1000px;
+			margin: auto;
+			padding: 16px;
+		}
+		h2 {
+			text-align:center;
+		}
+		.name {
+			position:absolute;
+			left:280px;
+			top:250px;
+            width:12%;
+		}
+		
+		#kep {
+			position: absolute;
+			border:2px solid black;
+			width:12%;
+			height:20%;
+			box-sizing: border-box;
+			top:310px;
+			left:280px;
+		}
+
+		#logo2{
+			position:absolute;
+			left:280px;
+			top:492px;
+		}
+		.lista {
+			position: absolute;
+			top: 525px;
+			left: 280px;
+			bottom: 0;
+			width:12%;
+        }
+        #hozzavalo{
+            width:100%;
+        }
+		.ido {
+			position: absolute;
+			top: 500px;
+			left: 1150px;
+			bottom: 0;
+			width: 50%;
+			padding-bottom:20px;
+		}
+		.chk {
+			border:1px solid black;
+			border-radius:10px;
+			padding:10px;
+		}
+		.elkeszit {
+			position: absolute;
+			top: 250px;
+			left: 600px;
+			bottom: 0;
+			width: 30%;
+			height: 50%;
+			box-sizing: border-box;
+		}
+		#leiras {
+			border-radius: 10px;
+			border:2px solid black;
+			background-color:lightgrey;
+			width:90%;
+			height:90%;
+			padding:10px;
+			resize:none;
+			font-size:15px;
+		}
+		.filter {
+			background-color:transparent;
+			position: absolute;
+			top:250px;
+			left:1150px;
+		}
+		
+		form .gomb {
+			background: grey;
+			color:white;
+			position:absolute;
+			top: 900px;
+			left: 730px;
+			height:5%;
+			width:12%;
+			border-radius:10px;
+			transition: 0.3s;
+		}
+		.gomb:hover {
+			cursor: pointer;
+			background-color: #bbb;
+		}
+  }

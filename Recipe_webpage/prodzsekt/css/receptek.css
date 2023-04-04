@@ -1,0 +1,163 @@
+#osszrecept {
+	max-width: 100%;
+	background-color: #f1f1f1;
+  }
+
+  /* MOBIL */
+
+  .kep-tarolo {
+	width: 100%;
+	height: 130px;
+  }
+
+  .kep-tarolo img {
+	width:100%;
+	max-height:100%;
+	object-fit: cover;
+	border-bottom: 1px rgb(92, 0, 0) solid;
+  }
+
+ 
+
+  .recept-sor-mobil {
+	width: 80%;
+	margin: auto;
+	margin-bottom: 25px;
+  }
+
+  .recept-mobil {
+	margin: auto;
+	border: 1px rgb(92, 0, 0) solid;
+	border-bottom: 0;
+	background-color: whitesmoke;
+	min-width: 200px;
+	max-width: 250px;
+	min-height: 250px;
+	max-height: 350px;
+	overflow: hidden;
+  }
+
+ 
+
+  .mobil {
+	display: block;
+	margin: 20px;
+  }
+
+  .recept-sor-tablet {
+	display: none;
+  }
+
+  .recept-sor-pc {
+	display: none;
+  }
+
+  .idonehez {
+	min-width: 200px;
+	max-width: 250px;
+	height: 30px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	border: 1px rgb(92, 0, 0) solid;
+  }
+
+  .idonehez p {
+	padding: 10px;
+	color:rgb(92, 0, 0);
+	text-decoration: underline;
+  }
+
+ .receptnev {
+	color:rgb(92, 0, 0);
+	text-align: center;
+	width:95%;
+ }
+
+ .feltolto {
+	color:rgb(181, 0, 0);
+	text-align: center;
+ }
+
+ @media only screen and (min-width: 600px) {
+
+	/* TABLET */
+
+	#osszrecept {
+		width: 100%;
+	}
+	.recept-sor-mobil {
+		display: none;
+	}
+
+	.recept-sor-tablet {
+		width: 95%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	.recept-tablet {
+		border: 1px rgb(92, 0, 0) solid;
+		background-color: whitesmoke;
+		display: inline-block;
+		min-width: 270px;
+		max-width: 500px;
+		min-height: 250px;
+		max-height: 400px;
+	}
+	.idonehez {
+		min-width: 250px;
+		max-width: 400px;
+		height: 30px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		border: 1px rgb(92, 0, 0) solid;
+	  }
+
+	.recept-sor-pc {
+		display: none;
+	}
+ }
+
+ @media only screen and (min-width: 1024px) {
+	/* PC */
+
+	#osszrecept {
+		width: 68%;
+		float: right;
+	}
+	
+	.recept-sor-mobil {
+		display: none;
+	}
+	.recept-sor-tablet {
+		display: none;
+	}
+	
+	.recept-sor-pc {
+		width: 95%;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+	.recept-pc {
+		border: 1px rgb(92, 0, 0) solid;
+		border-bottom: 0;
+		background-color: whitesmoke;
+		display: inline-block;
+		min-width: 150px;
+		max-width: 300px;
+		min-height: 250px;
+		max-height: 400px;
+		width: 200px;
+		height:300px;
+	}
+	.idonehez {
+		width: 200px;
+		min-width: 200px;
+		max-width: 200px;
+	}
+}

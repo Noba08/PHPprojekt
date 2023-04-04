@@ -1,0 +1,143 @@
+* {
+    font-family: 'Gentium Book Basic', sans-serif;
+}
+
+#receptNev {
+    width: 92%;
+    margin: auto;   
+    font-size: 2em;
+}
+
+#info {
+    width: 92%;
+    margin: auto;
+    text-align: center;
+    border: 1px rgba(169, 169, 169, 0.342) solid;
+    height: 80px;
+}
+
+#info p {
+    height: 100%;
+    float: left;
+    line-height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#receptKep {
+    width:92%;
+    margin: auto;
+}
+
+#receptKep img {
+    position: relative;
+    width: 100%;
+}
+
+#hozzavalok {
+    width: 92%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px rgba(169, 169, 169, 0.342) solid;
+}
+
+#hozzavalokNev {
+    width: 100%;
+    background-color: rgb(94, 94, 94);
+    color: white;
+    height: 37px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+
+#hozzavalokOssz {
+    padding: 10px;
+    list-style: none;
+    line-height: 26px;
+    background-color: rgb(242, 242, 242);
+}
+
+#elkeszites {
+    width: 92%;
+    margin: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.folyamat {
+    font-size: 1.2em;
+    color:rgb(94, 94, 94);
+}
+
+.folyamat h3 {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background-color: rgba(105, 0, 0, 0.686);
+    display: inline-block;
+}
+
+#kedvenc {
+    float: right;
+    width: 20px;
+}
+
+#etrend {
+    text-align: center;
+    border: 1px rgb(92, 0, 0) solid;
+    padding: 10px;
+    margin: 10px;
+    float: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    #receptKep {
+        width: 80%;
+        margin: auto;
+    }
+
+    #hozzavalok {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        border: 1px rgba(169, 169, 169, 0.342) solid;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #container{
+        width: 60%;
+        margin: auto;
+        background-color: whitesmoke;
+    }
+
+    #receptKep {
+        max-width: 55%;
+        max-height: 500px;
+        width: auto;
+        height: auto;
+        margin: auto;
+        margin-left: 30px;
+        display: inline-block;
+    }
+    #receptKep img {
+        width:100%;
+	max-height:100%;
+	object-fit: cover;
+	border-bottom: 1px rgb(92, 0, 0) solid;
+        
+    }
+
+    #hozzavalok {
+        float: right;
+        max-width: 35%;
+        margin: auto;
+        margin-right: 30px;
+        overflow: hidden;
+        border: 1px rgba(169, 169, 169, 0.342) solid;
+    }
+}
